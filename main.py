@@ -19,6 +19,42 @@ array_diff([1,2,2,2,3],[2]) == [1,3]
 a = [[1,2,3], [1,3], [1,2], [3,2,1]]
 b = [1,2]
 
+sub_list = a
+print(sub_list)
+print("-------------")
+
+
+for str_a in sub_list:
+    for elem_a in str_a:
+
+            for elem_b in b:
+                if elem_a == elem_b:
+                    if elem_b != 0:
+                        numb = elem_b
+                        sub_list.remove(elem_a)
+                        print(elem_a, numb)
+
+
+#        ind_a = a.index(str_a)
+#        a.pop(ind_a)
+print("-------------")
+print(sub_list)
+
+
+
+
+
+
+
+
+
+
+#return c
+
+"""
+a = [[1,2,3], [1,3], [1,2], [3,2,1]]
+b = [1,2]
+
 c = []
 cc = []
 aa = []
@@ -41,6 +77,8 @@ for i in range(0, len(a), 1):
                     aaa.pop(j)
                 cc.append(aaa[j])
 print(c)
+"""
+
 
 
 """
@@ -61,4 +99,3 @@ for i in range(0, len(a), 1):
 print(c)
 """
 
-#return c
